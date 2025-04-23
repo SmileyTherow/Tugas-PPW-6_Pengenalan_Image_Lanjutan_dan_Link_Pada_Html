@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Member</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f3f4f6;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        input, textarea, select, button {
+            margin: 5px 0;
+            padding: 5px;
+            width: 100%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2d4aa5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Pendaftaran Member</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Data Diri</legend>
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="tempat-lahir">Tempat Lahir:</label>
+                <input type="text" id="tempat-lahir" name="tempat_lahir" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal-lahir">Tanggal Lahir:</label>
+                <input type="date" id="tanggal-lahir" name="tanggal_lahir" required>
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                <label for="perempuan">Perempuan</label>
+            </div>
+            <div class="form-group">
+                <label for="agama">Agama:</label>
+                <select id="agama" name="agama" required>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" rows="3" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kontak</legend>
+            <div class="form-group">
+                <label for="no-telepon">No. Telepon:</label>
+                <input type="text" id="no-telepon" name="no_telepon" required>
+            </div>x
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferensi Seni Lukisan</legend>
+            <div class="form-group">
+                <label>Aliran Seni Lukisan:</label>
+                <select id="aliran-seni" name="aliran_seni" required>
+                    <optgroup label="Klasik">
+                        <option value="Renaissance">Renaissance</option>
+                        <option value="Baroque">Baroque</option>
+                        <option value="Romantisisme">Romantisisme</option>
+                    </optgroup>
+                    <optgroup label="Modern">
+                        <option value="Impresionisme">Impresionisme</option>
+                        <option value="Ekspresionisme">Ekspresionisme</option>
+                        <option value="Kubisme">Kubisme</option>
+                    </optgroup>
+                    <optgroup label="Kontemporer">
+                        <option value="Abstrak">Abstrak</option>
+                        <option value="Surealisme">Surealisme</option>
+                        <option value="Pop Art">Pop Art</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit">Daftar</button>
+    </form>
+</body>
+</html>
